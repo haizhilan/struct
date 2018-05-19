@@ -29,7 +29,12 @@ int main(int argc, char const *argv[])
 	// 清空
 	// clearList(&L);
 	// 销毁
-	destroyList(&L);
+	// destroyList(&L);
+	// 查找值
+	Elemtype data = findList(L,7);
+	printf("查到的值：%d\n", data);
+	//值是否在
+	findValueList(L,10);
 	printf("还有只啊=%d\n", L.elem[1]);
 	printf("length=%d\n", L.length);
 	printf("listsize=%d\n", L.listsize);

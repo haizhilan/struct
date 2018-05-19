@@ -116,6 +116,23 @@ Status destroyList(SqlList *L) {
 		return FALSE;
 	}
 }
+// 查找顺序表的值
+Elemtype findList(SqlList L,int site) {
+	
+	return L.elem[site];
+}
+// 值是否在顺序表中
+int findValueList(SqlList L,Elemtype data) {
+	for (int i = 0; i < L.length; ++i)
+	{
+	
+		if (L.elem[i] == data) {
+			return i;
+		}
+	}
+
+	return ERROR;
+}
 // 遍历链表
 void printList (SqlList L) {
 	for (int i = 0; i < L.length; ++i)
